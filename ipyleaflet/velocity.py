@@ -54,7 +54,7 @@ class Velocity(Layer):
     data = Dataset().tag(dtype=None, sync=True, to_json=ds_x_to_json)
 
     # Options
-    display_values = Bool(True).tag(sync=True, o=True)
+    display_values = Bool(False).tag(sync=True, o=True)
     display_options = Dict({
         'velocityType': 'Global Wind',
         'position': 'bottomleft',
